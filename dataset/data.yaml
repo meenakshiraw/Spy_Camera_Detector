@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 21
+names: ['------------------------------', '360-Cam', 'CCTV', 'Monitor', 'Security camera', 'Speed-Camera', 'box', 'bullet', 'camera', 'cctv', 'degital-camera', 'dome', 'doorbell', 'hidden camera', 'maru', 'nest', 'no more kid', 'ptz', 'spy camera', 'turret', 'tutu']
+
+roboflow:
+  workspace: meenakshirawat0418-gmail-com
+  project: hiddencamera-wya9t-3tl28-ue6ka
+  version: 5
+  license: CC BY 4.0
+  url: https://app.roboflow.com/meenakshirawat0418-gmail-com/hiddencamera-wya9t-3tl28-ue6ka/5
