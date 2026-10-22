@@ -66,13 +66,22 @@ It may help users identify suspicious camera-like objects, but it cannot guarant
 - Responsive, cybersecurity-themed dashboard.
 - Docker Compose support for deployment.
 
-## ⚙️ How It Works
 
-1. The user grants camera permission and starts scanning.
-2. The browser captures image frames and sends them to the backend.
-3. FastAPI passes the images to the trained YOLO model.
-4. The model identifies objects that resemble classes learned during training.
-5. Detection results are returned to the frontend for display.
+## How It Works
+
+1\. Camera Access and Live Scanning: The user grants camera permission and starts the live scanner to scan the surrounding environment for potential hidden cameras.
+
+2\. Real-Time Image Capture: The frontend, built with HTML, CSS, and JavaScript, captures image frames from the camera and sends them to the FastAPI backend for analysis.
+
+3\. AI-Powered Object Detection: The FastAPI backend processes the incoming frames using a trained YOLO model to identify objects that match the camera-related classes learned during training.
+
+4\. Detection and Alert Generation: The backend returns detection results, including identified objects and confidence scores, to the frontend. When a potential camera is detected, the application displays the detection and generates a scanner alert.
+
+5\. PostgreSQL Database Storage: Scan records, camera detection results, and generated alerts are saved in the PostgreSQL database, allowing the application to maintain a history of scanning activity.
+
+6\. Dashboard Monitoring: The dashboard displays camera detection results, scanner activity, alerts, and saved scan history, helping users review potential privacy risks and monitor previous scans.
+
+7\. Review and Verification: Users can review detected objects and investigate suspicious items. The application helps identify potential hidden cameras, but detections should be verified because AI predictions are not always accurate.
 
 ```mermaid
 flowchart TD
