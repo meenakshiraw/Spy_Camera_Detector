@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Spy Camera Visual Detector
 
 A minimal web app: browser live camera, a basic visual screening heuristic, red alerts, and inspection history stored in PostgreSQL. FastAPI serves the frontend and API from the same origin.
