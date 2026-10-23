@@ -169,7 +169,4 @@ A negative scan does **not** prove that a room is safe. If you find a suspicious
 - Evaluate model precision and recall.
 - Improve mobile performance and deployment reliability.
 
-## 📄 License
 
-Add a suitable `LICENSE` file before publicly distributing the project.
->>>>>>> 86675bb529ab1dc3e5ca502b78c59d7726b008c1
